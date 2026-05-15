@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <header class="mx-auto">
+      <nav class="flex justify-between border-2 rounded-2xl items-center">
+        <div class="flex items-center text-3xl font-extrabold">
+          <a class="cursor-pointer" href="#hero">
+            <span class="text-brand-text">The UX </span>
+            <span class="text-orange-500"> Review</span>
+          </a>
+        </div>
+        <div class="text-sm font-semibold display-none xl-block">
+          <ul class="flex items-center gap-4">
+            <li>
+              <a class="text-black duration-200" href="#hero">HOME</a>
+              <i class="fa-solid fa-star text-xs text-gray-300 ml-4"></i>
+            </li>
+            <li>
+              <a class="text-black duration-200" href="#latestArticles"
+                >LATEST ARTICLES</a
+              >
+              <i class="fa-solid fa-star text-xs text-gray-300 ml-4"></i>
+            </li>
+
+            <li>
+              <a class="text-black duration-200" href="#authors">AUTHORS</a>
+              <i class="fa-solid fa-star text-xs text-gray-300 ml-4"></i>
+            </li>
+            <li>
+              <a class="text-black duration-200" href="#community">COMMUNITY</a>
+            </li>
+          </ul>
+        </div>
+        <button class="bg-brand-yellow text-sm border-2 rounded-full xl-block">
+          <a href="#community" class="text-black font-bold">SUBSCRIBE NOW</a>
+        </button>
+        <a
+          href="#sidebar"
+          class="border-2 bar-icon brutal-shadow-xs duration-200 rounded-sm xl-display-none cursor-pointer flex items-center justify-center">
+          <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </a>
+      </nav>
+      <aside id="sidebar">
+        <div class="flex flex-col menu-bar">
+          <div class="flex justify-between menu-badge mb-8">
+            <div class="font-black align-self-center menu-transform text-2xl">
+              MENU
+            </div>
+            <a
+              href="#"
+              class="mark-icon duration-200 border-2 cursor-pointer flex items-center justify-center">
+              <i class="fa-solid fa-times text-2xl fa-xmark duration-200"></i>
+            </a>
+          </div>
+          <ul class="flex flex-col gap-5">
+            <li>
+              <a href="#hero" class="text-xl font-bold duration-150"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                href="#latestArticles"
+                class="text-xl font-bold duration-150"
+                >LATEST ARTICLES</a
+              >
+            </li>
+            <li>
+              <a href="#authors" class="text-xl font-bold duration-150"
+                >AUTHORS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#community"
+                class="text-xl font-bold duration-150"
+                >COMMUNITY</a
+              >
+            </li>
+          </ul>
+          <button
+            class="bg-brand-yellow mt-7 flex justify-center text-lg brutal-border duration-150 brutal-shadow-xs">
+            <i class="fa-solid fa-rocket align-self-center mr-2"></i>
+            <a href="#community" class="text-black font-bold">SUBSCRIBE NOW</a>
+          </button>
+        </div>
+      </aside>
+      <a href="#" class="overlay xl-display-none cursor-pointer"></a>
+    </header>
+    <main>
+      <section id="hero" class="bg-yellow pb-16 pt-36 relative">
+        <div class="container mx-auto px-8">
+          <div class="absolute black-square"></div>
+          <div class="absolute red-square"></div>
+          <div class="flex flex-col justify-center">
+            <div
+              class="trend-now bg-black text-white brutal-shadow-xs border-2 text-sm font-bold mb-6">
+              🔥 TRENDING NOW
+            </div>
+            <h2 class="leading-tight text-7xl font-black mb-8 text-shadow">
+              BRUTAL <span class="text-red-600">THOUGHTS</span>
+              <span class="text-blue-600">BOLD IDEAS</span>
+            </h2>
+            <p class="text-2xl font-medium bg-white p-4 border-2 brutal-shadow-xs mb-8">
+              Raw, unfiltered content about tech, design, and culture. No
+              sugar-coating, just pure truth that hits different.
+            </p>
+            <div class="flex items-center">
+              <button class="text-xl text-white duration-200 cursor-pointer bg-black font-bold brutal-border duration-200 py-4 px-8">
+                <i class="fa-solid fa-rocket mr-2"></i>
+                START READING
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="latestArticles"></section>
+      <section id="authors"></section>
+      <section id="community"></section>
+    </main>
+    <footer></footer>
+</body>
+</html>

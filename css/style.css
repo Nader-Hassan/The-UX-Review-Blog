@@ -1,0 +1,515 @@
+/* ============================= Base Setup ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+}
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  border: 2px solid #000;
+}
+a {
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+section {
+  padding: 80px 0;
+  border-bottom: 2px solid #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  font-family: inherit;
+}
+::selection {
+  background-color: #ffd15b;
+  color: #111;
+}
+/* ================== Utilities text colors================= */
+.text-brand-text {
+  color: #111;
+}
+.text-black {
+  color: #000;
+}
+.text-orange-500 {
+  color: #ff6900;
+}
+.text-gray-300 {
+  color: #d1d5dc;
+}
+.text-white {
+  color: #fff;
+}
+.text-red-600 {
+  color: #e7000b;
+}
+.text-blue-600 {
+  color: #155dfc;
+}
+/* ================== Utilities Background colors================= */
+.bg-yellow {
+  background-color: #fff085;
+}
+.bg-brand-yellow {
+  background-color: #ffd15b;
+}
+.bg-black {
+  background-color: #000;
+}
+.bg-white {
+  background-color: #fff;
+}
+/* ================== Utilities text sizes & line height ================= */
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+/* ===================== Utilities border width & style ================== */
+.border {
+  border: 1px solid;
+}
+.border-2 {
+  border: 2px solid;
+}
+/* ======================== Utilities Text align ======================= */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+/* ======================== Utilities Font weight ======================= */
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
+}
+/* ======================== Utilities Positions ======================= */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/* ======================= Utilities Border raduis ====================== */
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-sm {
+  border-radius: 0.25rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+/* ========================= Utilities padding =========================== */
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.pb-16 {
+  padding-bottom: 4rem;
+}
+.pt-36 {
+  padding-top: 9rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* ========================= Utilities Margin =========================== */
+.mx-auto {
+  margin: auto;
+}
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.mr-1-5 {
+  margin-right: 0.375rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
+.mr-12 {
+  margin-right: 3rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mt-1-5 {
+  margin-top: 0.375rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+/* ============================= Utilities Gap =========================== */
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-12 {
+  gap: 3rem;
+}
+.gap-16 {
+  gap: 4rem;
+}
+/* ========================= Utilities Width & height ======================= */
+.w-full {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-6 {
+  width: 24px;
+}
+.w-12 {
+  width: 48px;
+}
+.h-40 {
+  height: 40px;
+}
+/* ========================= Utilities Flex Box ======================== */
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.align-self-center {
+  align-self: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+/* =========================== Common Classes ======================== */
+.container {
+  max-width: 1280px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.duration-200 {
+  transition: 0.2s all;
+}
+.duration-150 {
+  transition: 0.15s all;
+}
+.display-none {
+  display: none;
+}
+.brutal-shadow-xs {
+  box-shadow: 3px 3px #000;
+}
+.leading-tight {
+  line-height: 1.25;
+}
+.text-shadow {
+  text-shadow: 3px 3px #000c;
+}
+.brutal-border {
+  border: 4px solid #000;
+}
+.z-index-1 {
+  z-index: 1;
+}
+/* ==================================================================== */
+/* ----------------------------- header section ---------------------- */
+header {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  max-width: 80rem;
+}
+nav {
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+}
+nav button {
+  padding: 0.5rem 1rem;
+  display: none;
+}
+nav ul li a:hover {
+  color: #ff7a50;
+}
+.bar-icon {
+  width: 42px;
+  height: 42px;
+  transition: 0.2s all;
+}
+header .bar-icon:hover {
+  transform: translateY(-2px);
+}
+aside {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  transform: rotate(2deg);
+  opacity: 0;
+  width: 80%;
+  max-width: 20rem;
+  height: 100vh;
+  background-color: white;
+  border-left: 4px solid #000;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  z-index: 1000;
+}
+aside:target {
+  right: 0;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.menu-bar {
+  padding: 1.5rem;
+}
+.menu-badge {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 0.75rem 0;
+}
+.menu-transform {
+  transform: rotate(-1deg);
+}
+.mark-icon {
+  width: 40px;
+  height: 40px;
+}
+.mark-icon:hover {
+  background-color: #ffe2e2;
+}
+.mark-icon:hover .fa-xmark {
+  color: #ff7a50;
+}
+aside button {
+  padding: 0.75rem 0;
+}
+aside button:hover {
+  transform: translateY(-4px);
+}
+aside ul li a:hover {
+  color: #ff7a50;
+  transform: translateY(-4px);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+}
+aside:target + .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+/* ----------------------------- first section ---------------------- */
+#hero .black-square {
+  width: 8rem;
+  height: 8rem;
+  transform: rotate(12deg);
+  top: 2.5rem;
+  left: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#hero .red-square {
+  width: 6rem;
+  height: 6rem;
+  transform: rotate(-45deg);
+  top: 10rem;
+  right: 5rem;
+  background-color: rgba(251, 44, 54, 0.1);
+}
+#hero .trend-now {
+  padding: 0.5rem 1rem;
+  transform: rotate(-2deg);
+  width: fit-content;
+  border-color: #000;
+}
+#hero button{
+  box-shadow: 4px 4px #000;
+}
+#hero button:hover {
+  transform: translate(4px,4px);
+  box-shadow: none;
+}
+/* #hero button::after {
+  content: "";
+  width: 102%;
+  height:102%;
+  background-color: #000;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -5;
+} */
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1280px) {
+  .xl-display-none {
+    display: none;
+  }
+  .xl-block {
+    display: block;
+  }
+  aside {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
