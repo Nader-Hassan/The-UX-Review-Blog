@@ -65,14 +65,10 @@
           </div>
           <ul class="flex flex-col gap-5">
             <li>
-              <a href="#hero" class="text-xl font-bold duration-150"
-                >HOME</a
-              >
+              <a href="#hero" class="text-xl font-bold duration-150">HOME</a>
             </li>
             <li>
-              <a
-                href="#latestArticles"
-                class="text-xl font-bold duration-150"
+              <a href="#latestArticles" class="text-xl font-bold duration-150"
                 >LATEST ARTICLES</a
               >
             </li>
@@ -82,9 +78,7 @@
               >
             </li>
             <li>
-              <a
-                href="#community"
-                class="text-xl font-bold duration-150"
+              <a href="#community" class="text-xl font-bold duration-150"
                 >COMMUNITY</a
               >
             </li>
@@ -96,32 +90,52 @@
           </button>
         </div>
       </aside>
-      <a href="#" class="overlay xl-display-none cursor-pointer"></a>
+      <a href="#" class="overlay duration-300 xl-display-none cursor-pointer"></a>
     </header>
     <main>
-      <section id="hero" class="bg-yellow pb-16 pt-36 relative">
+      <section id="hero" class="bg-yellow pb-16 pt-36 relative z-index-1">
         <div class="container mx-auto px-8">
           <div class="absolute black-square"></div>
           <div class="absolute red-square"></div>
-          <div class="flex flex-col justify-center">
-            <div
-              class="trend-now bg-black text-white brutal-shadow-xs border-2 text-sm font-bold mb-6">
-              🔥 TRENDING NOW
+          <div class="absolute blue-square"></div>
+          <div class="flex flex-col gap-16 lg-flex-row lg-items-center">
+            <div class="flex-1">
+              <div
+                class="trend-now bg-black text-white brutal-shadow-xs border-2 text-sm font-bold mb-6">
+                🔥 TRENDING NOW
+              </div>
+              <h2 class="leading-tight text-7xl font-black mb-8 text-shadow flex flex-col">
+                BRUTAL <span class="text-red-600">THOUGHTS</span>
+                <span class="text-blue-600">BOLD IDEAS</span>
+              </h2>
+              <p
+                class="text-2xl font-medium bg-white p-4 border-2 brutal-shadow-xs mb-8">
+                Raw, unfiltered content about tech, design, and culture. No
+                sugar-coating, just pure truth that hits different.
+              </p>
+              <div class="flex items-center gap-4">
+                <button
+                  class="text-xl text-white duration-200 cursor-pointer bg-black font-bold brutal-border duration-200 py-4 px-8">
+                  <i class="fa-solid fa-rocket mr-1"></i>
+                  START READING
+                </button>
+                <button
+                  class="text-xl text-black duration-200 cursor-pointer bg-white font-bold brutal-border duration-200 py-4 px-8">
+                  <i class="fa-solid fa-play mr-1"></i>
+                  WATCH INTRO
+                </button>
+              </div>
             </div>
-            <h2 class="leading-tight text-7xl font-black mb-8 text-shadow">
-              BRUTAL <span class="text-red-600">THOUGHTS</span>
-              <span class="text-blue-600">BOLD IDEAS</span>
-            </h2>
-            <p class="text-2xl font-medium bg-white p-4 border-2 brutal-shadow-xs mb-8">
-              Raw, unfiltered content about tech, design, and culture. No
-              sugar-coating, just pure truth that hits different.
-            </p>
-            <div class="flex items-center">
-              <button class="text-xl text-white duration-200 cursor-pointer bg-black font-bold brutal-border duration-200 py-4 px-8">
-                <i class="fa-solid fa-rocket mr-2"></i>
-                START READING
-              </button>
-              <button></button>
+            <div
+              class="brutal-border hero-img flex flex-1 items-center justify-center relative duration-300 lg-rotate-2">
+              <img
+                class="w-full h-full object-cover"
+                src="./images/e7c75b833c-f09fa794a4e1fbd04b1e.png"
+                alt="abstract brutalist geometric shapes with bold colors, digital art style, high contrast" />
+              <div
+                class="absolute featured-card bg-red-500 text-white border-2 brutal-shadow-xs font-bold">
+                FEATURED
+              </div>
             </div>
           </div>
         </div>
@@ -131,5 +145,5 @@
       <section id="community"></section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>

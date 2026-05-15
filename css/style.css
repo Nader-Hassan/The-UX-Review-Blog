@@ -9,7 +9,7 @@
 }
 body {
   font-family: "Exo", sans-serif;
-  font-size: 16px;
+  font-size: inherit;
   line-height: 1.5;
   color: #000;
   border: 2px solid #000;
@@ -73,6 +73,9 @@ button {
 }
 .bg-white {
   background-color: #fff;
+}
+.bg-red-500 {
+  background-color: #fb2c36;
 }
 /* ================== Utilities text sizes & line height ================= */
 .text-xs {
@@ -285,14 +288,8 @@ button {
 .w-50 {
   width: 50%;
 }
-.w-6 {
-  width: 24px;
-}
-.w-12 {
-  width: 48px;
-}
-.h-40 {
-  height: 40px;
+.h-full {
+  height: 100%;
 }
 /* ========================= Utilities Flex Box ======================== */
 .flex {
@@ -323,6 +320,9 @@ button {
 .cursor-pointer {
   cursor: pointer;
 }
+.duration-300 {
+  transition: 0.3s all;
+}
 .duration-200 {
   transition: 0.2s all;
 }
@@ -346,6 +346,9 @@ button {
 }
 .z-index-1 {
   z-index: 1;
+}
+.object-cover {
+  object-fit: cover;
 }
 /* ==================================================================== */
 /* ----------------------------- header section ---------------------- */
@@ -372,7 +375,6 @@ nav ul li a:hover {
 .bar-icon {
   width: 42px;
   height: 42px;
-  transition: 0.2s all;
 }
 header .bar-icon:hover {
   transform: translateY(-2px);
@@ -438,7 +440,6 @@ aside ul li a:hover {
   z-index: 998;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s all;
 }
 aside:target + .overlay {
   opacity: 1;
@@ -461,29 +462,45 @@ aside:target + .overlay {
   right: 5rem;
   background-color: rgba(251, 44, 54, 0.1);
 }
+#hero .blue-square {
+  width: 7rem;
+  height: 7rem;
+  transform: rotate(-45deg);
+  bottom: 5rem;
+  left: 33.3333%;
+  z-index: -5;
+  background-color: rgba(43, 127, 255, 0.1);
+}
 #hero .trend-now {
   padding: 0.5rem 1rem;
   transform: rotate(-2deg);
   width: fit-content;
   border-color: #000;
 }
-#hero button{
-  box-shadow: 4px 4px #000;
+#hero button {
+  box-shadow: 5px 5px #000;
 }
 #hero button:hover {
-  transform: translate(4px,4px);
+  transform: translate(5px, 5px);
   box-shadow: none;
 }
-/* #hero button::after {
-  content: "";
-  width: 102%;
-  height:102%;
-  background-color: #000;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  z-index: -5;
-} */
+.hero-img {
+  height: 24rem;
+  box-shadow: 6px 6px #000;
+  backface-visibility: hidden;
+  /* Prevents rendering artifacts (white dots/jagged edges) on shadows during rotation. */
+}
+.hero-img:hover {
+  transform: translate(-2px, -2px);
+}
+.featured-card {
+  padding: 0.5rem 1rem;
+  top: -1.7rem;
+  right: -0.8rem;
+  transform: rotate(12deg);
+  border-color: #000;
+}
+/* ----------------------------------------------------------------------- */
 @media screen and (max-width: 480px) {
   :root {
     font-size: 12px;
@@ -500,6 +517,15 @@ aside:target + .overlay {
   }
 }
 @media screen and (min-width: 1024px) {
+  .lg-flex-row {
+    flex-direction: row;
+  }
+  .lg-items-center {
+    align-items: center;
+  }
+  .lg-rotate-2 {
+    rotate: 2deg;
+  }
 }
 @media screen and (min-width: 1280px) {
   .xl-display-none {
