@@ -13,7 +13,8 @@
   </head>
   <body>
     <header class="mx-auto">
-      <nav class="flex justify-between border-2 rounded-2xl items-center">
+      <nav
+        class="flex justify-between brutal-border-sm rounded-2xl items-center">
         <div class="flex items-center text-3xl font-extrabold">
           <a class="cursor-pointer" href="#hero">
             <span class="text-brand-text">The UX </span>
@@ -42,12 +43,13 @@
             </li>
           </ul>
         </div>
-        <button class="bg-brand-yellow text-sm border-2 rounded-full xl-block">
+        <button
+          class="bg-brand-yellow text-sm brutal-border-sm rounded-full xl-block">
           <a href="#community" class="text-black font-bold">SUBSCRIBE NOW</a>
         </button>
         <a
           href="#sidebar"
-          class="border-2 bar-icon brutal-shadow-xs duration-200 rounded-sm xl-display-none cursor-pointer flex items-center justify-center">
+          class="brutal-border-sm bar-icon brutal-shadow-xs duration-200 rounded-sm xl-display-none cursor-pointer flex items-center justify-center">
           <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
         </a>
       </nav>
@@ -59,7 +61,7 @@
             </div>
             <a
               href="#"
-              class="mark-icon duration-200 border-2 cursor-pointer flex items-center justify-center">
+              class="mark-icon duration-200 brutal-border-sm cursor-pointer flex items-center justify-center">
               <i class="fa-solid fa-times text-2xl fa-xmark duration-200"></i>
             </a>
           </div>
@@ -90,26 +92,30 @@
           </button>
         </div>
       </aside>
-      <a href="#" class="overlay duration-300 xl-display-none cursor-pointer"></a>
+      <a
+        href="#"
+        class="overlay duration-300 xl-display-none cursor-pointer"></a>
     </header>
     <main>
+      <!-------------------------------------First section--------------------------------->
       <section id="hero" class="bg-yellow pb-16 pt-36 relative z-index-1">
         <div class="container mx-auto px-8">
-          <div class="absolute black-square"></div>
-          <div class="absolute red-square"></div>
-          <div class="absolute blue-square"></div>
+          <div class="absolute select-none black-square"></div>
+          <div class="absolute select-none red-square"></div>
+          <div class="absolute select-none blue-square"></div>
           <div class="flex flex-col gap-16 lg-flex-row lg-items-center">
             <div class="flex-1">
               <div
-                class="trend-now bg-black text-white brutal-shadow-xs border-2 text-sm font-bold mb-6">
+                class="trend-now bg-black text-white brutal-shadow-xs brutal-border-sm text-sm font-bold mb-6">
                 🔥 TRENDING NOW
               </div>
-              <h2 class="leading-tight text-7xl font-black mb-8 text-shadow flex flex-col">
+              <h2
+                class="leading-tight text-7xl font-black mb-8 text-shadow flex flex-col">
                 BRUTAL <span class="text-red-600">THOUGHTS</span>
                 <span class="text-blue-600">BOLD IDEAS</span>
               </h2>
               <p
-                class="text-2xl font-medium bg-white p-4 border-2 brutal-shadow-xs mb-8">
+                class="text-2xl font-medium bg-white p-4 brutal-border-sm brutal-shadow-xs mb-8">
                 Raw, unfiltered content about tech, design, and culture. No
                 sugar-coating, just pure truth that hits different.
               </p>
@@ -127,20 +133,270 @@
               </div>
             </div>
             <div
-              class="brutal-border hero-img flex flex-1 items-center justify-center relative duration-300 lg-rotate-2">
+              class="brutal-border hero-img brutal-shadow flex lg-flex-1 items-center justify-center relative duration-300 lg-rotate-2">
               <img
                 class="w-full h-full object-cover"
                 src="./images/e7c75b833c-f09fa794a4e1fbd04b1e.png"
                 alt="abstract brutalist geometric shapes with bold colors, digital art style, high contrast" />
               <div
-                class="absolute featured-card bg-red-500 text-white border-2 brutal-shadow-xs font-bold">
+                class="absolute featured-card bg-red-500 text-white brutal-border-sm brutal-shadow-xs font-bold">
                 FEATURED
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="latestArticles"></section>
+      <!-----------------------------Second section---------------------------------- -->
+      <section id="latestArticles" class="bg-neutral-100">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col">
+            <div class="flex flex-col lg-flex-row lg-gap-8 gap-6">
+              <div class="flex flex-col gap-8 lg-w-66">
+                <div class="flex items-center justify-between mb-6 flex-1">
+                  <h3 class="text-5xl font-black">LATEST ARTICLES</h3>
+                  <div
+                    class="bg-black font-bold display-none sm-block text-white px-4 py-2 brutal-border-sm brutal-shadow-xs rotate-2">
+                    🔥 FRESH CONTENT
+                  </div>
+                </div>
+                <article
+                  class="bg-white brutal-shadow-sm brutal-border duration-300 p-8 artic artic-1">
+                  <div class="flex flex-col lg-flex-row lg-gap-6">
+                    <div class="brutal-border-sm artic-img mb-3 relative">
+                      <img
+                        class="w-full object-cover h-full"
+                        src="./images/user-engagement-2-DFdiyblT.jpg"
+                        alt="bold website design with sharp edges and contrasting colors" />
+                      <div
+                        class="absolute artic-status-card bg-red-500 text-xs rotate-12 text-white brutal-border-sm font-bold">
+                        NEW
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="artic-category-card -rotate-1 text-xs bg-yellow-300 text-black brutal-shadow-xs brutal-border-sm font-bold mb-3">
+                        TECH
+                      </div>
+                      <h4 class="text-2xl font-bold mb-3 duration-150">
+                        Why Your Website Needs More Edge
+                      </h4>
+                      <p class="text-lg mb-4 leading-relaxed">
+                        Exploring the psychological impact of bold, unapologetic
+                        design choices on user engagement and brand perception
+                        in the digital age.
+                      </p>
+                      <div
+                        class="text-sm font-semibold lg-flex lg-gap-28 xl-gap-10">
+                        <div class="xl-flex xl-gap-20">
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-user mr-2"></i>
+                            BY ALEX BRUTAL
+                          </span>
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-calendar mr-2"></i>
+                            JAN 8, 2025
+                          </span>
+                        </div>
+                        <div class="xl-flex xl-gap-10">
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            5 MIN READ
+                          </span>
+                          <span class="flex items-center text-red-600">
+                            <i class="fa-solid fa-heart mr-1"></i>
+                            127
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="bg-white brutal-shadow-sm brutal-border duration-300 p-8 artic artic-2">
+                  <div class="flex flex-col lg-flex-row lg-gap-6">
+                    <div class="brutal-border-sm artic-img mb-3 relative">
+                      <img
+                        class="w-full object-cover h-full"
+                        src="./images/guide-to-typography-CNuK3VDW.jpg"
+                        alt="bold website design with sharp edges and contrasting colors" />
+                      <div
+                        class="absolute artic-status-card bg-blue-500 text-xs -rotate-12 text-white brutal-border-sm font-bold">
+                        HOT
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="artic-category-card -rotate-1 text-xs bg-green-300 text-black brutal-shadow-xs brutal-border-sm font-bold mb-3">
+                        DESIGN
+                      </div>
+                      <h4 class="text-2xl font-bold mb-3 duration-150">
+                        Typography That Screams
+                      </h4>
+                      <p class="text-lg mb-4 leading-relaxed">
+                        How to choose and implement bold typography that
+                        commands attention without sacrificing readability or
+                        user experience.
+                      </p>
+                      <div
+                        class="text-sm font-semibold lg-flex lg-gap-28 xl-gap-10">
+                        <div class="xl-flex xl-gap-20">
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-user mr-2"></i>
+                            BY Arnold Reeve
+                          </span>
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-calendar mr-2"></i>
+                            JAN 6, 2025
+                          </span>
+                        </div>
+                        <div class="xl-flex xl-gap-10">
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            7 MIN READ
+                          </span>
+                          <span class="flex items-center text-red-600">
+                            <i class="fa-solid fa-heart mr-1"></i>
+                            89
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="bg-white brutal-shadow-sm brutal-border duration-300 p-8 artic artic-3">
+                  <div class="flex flex-col lg-flex-row lg-gap-6">
+                    <div class="brutal-border-sm artic-img mb-3 relative">
+                      <img
+                        class="w-full object-cover h-full"
+                        src="./images/anti-instagram-Bn9b8TEi.jpg"
+                        alt="bold website design with sharp edges and contrasting colors" />
+                      <div
+                        class="absolute artic-status-card bg-purple-500 text-xs rotate-45 text-white brutal-border-sm font-bold">
+                        VIRAL
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="artic-category-card -rotate-2 text-xs bg-pink-300 text-black brutal-shadow-xs brutal-border-sm font-bold mb-3">
+                        CULTURE
+                      </div>
+                      <h4 class="text-2xl font-bold mb-3 duration-150">
+                        The Anti-Instagram Movement
+                      </h4>
+                      <p class="text-lg mb-4 leading-relaxed">
+                        Young creators are abandoning polished feeds for raw,
+                        authentic content that celebrates imperfection and real
+                        human connection.
+                      </p>
+                      <div
+                        class="text-sm font-semibold lg-flex lg-gap-28 xl-gap-10">
+                        <div class="xl-flex xl-gap-20">
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-user mr-2"></i>
+                            BY MIKE EDGE
+                          </span>
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-calendar mr-2"></i>
+                            JAN 4, 2025
+                          </span>
+                        </div>
+                        <div class="xl-flex xl-gap-10">
+                          <span class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            4 MIN READ
+                          </span>
+                          <span class="flex items-center text-red-600">
+                            <i class="fa-solid fa-heart mr-1"></i>
+                            203
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <button
+                  class="text-xl text-white duration-200 cursor-pointer bg-black font-bold brutal-border duration-200 align-self-center mt-6">
+                  <i class="fa-solid fa-plus mr-2"></i>
+                  LOAD MORE ARTICLES
+                </button>
+              </div>
+              <div class="lg-w-33">
+                <div class="sticky-side flex flex-col gap-8">
+                  <div
+                    class="bg-white brutal-border brutal-shadow p-8 lg-self-flex-start w-full">
+                    <h4 class="text-3xl font-black mb-6">TRENDING NOW</h4>
+                    <div class="flex gap-4">
+                      <span class="text-4xl font-black text-red-500">01</span>
+                      <div>
+                        <h5
+                          class="font-bold text-lg cursor-pointer text-red-hover duration-150">
+                          The Death of Minimalism
+                        </h5>
+                        <p class="text-sm text-neutral-600 mt-1">
+                          12.5K reads • 🔥 Trending
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex gap-4 mt-6 mb-6">
+                      <span class="text-4xl font-black text-blue-500">02</span>
+                      <div>
+                        <h5
+                          class="font-bold text-lg cursor-pointer text-blue-hover duration-150">
+                          Chaos as a Design System
+                        </h5>
+                        <p class="text-sm text-neutral-600 mt-1">
+                          8.2K reads • ⚡ Rising
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex gap-4">
+                      <span class="text-4xl font-black text-purple-500"
+                        >03</span
+                      >
+                      <div>
+                        <h5
+                          class="font-bold text-lg cursor-pointer text-purple-hover">
+                          Digital Rebellion
+                        </h5>
+                        <p class="text-sm text-neutral-600 mt-1">
+                          6.7K reads • 💥 Hot
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white brutal-border brutal-shadow p-8 lg-self-flex-start w-full">
+                    <h4 class="text-3xl font-black mb-6">CATEGORIES</h4>
+                    <div class="flex flex-col gap-3">
+                      <span
+                        class="bg-yellow-100 brutal-border-sm px-4 py-3 cursor-pointer font-bold duration-150 tech-hover">
+                        TECH (24)
+                      </span>
+                      <span
+                        class="bg-green-100 brutal-border-sm px-4 py-3 cursor-pointer font-bold duration-150 design-hover">
+                        DESIGN (18)
+                      </span>
+                      <span
+                        class="bg-pink-100 brutal-border-sm px-4 py-3 cursor-pointer font-bold duration-150 culture-hover">
+                        CULTURE (15)
+                      </span>
+                      <span
+                        class="bg-blue-100 brutal-border-sm px-4 py-3 cursor-pointer font-bold duration-150 opinion-hover">
+                        OPINION (12)
+                      </span>
+                      <span
+                        class="bg-purple-100 brutal-border-sm px-4 py-3 cursor-pointer font-bold duration-150 tutorials-hover">
+                        TUTORIALS (9)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="authors"></section>
       <section id="community"></section>
     </main>
