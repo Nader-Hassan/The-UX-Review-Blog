@@ -123,7 +123,9 @@ button {
 .bg-pink-300 {
   background-color: #fda5d6;
 }
-
+.bg-amber-300 {
+  background-color: #ffd230;
+}
 /* ================== Utilities text sizes & line height ================= */
 .text-xs {
   font-size: 0.75rem;
@@ -321,6 +323,9 @@ button {
 .mb-12 {
   margin-bottom: 3rem;
 }
+.mb-16 {
+  margin-bottom: 4rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -435,6 +440,15 @@ button {
 }
 .rotate-2 {
   rotate: 2deg;
+}
+.rotate-12 {
+  transform: rotate(12deg);
+}
+.-rotate-12 {
+  transform: rotate(-12deg);
+}
+.rotate-45 {
+  transform: rotate(45deg);
 }
 .select-none {
   user-select: none;
@@ -599,15 +613,6 @@ aside:target + .overlay {
   top: -0.7rem;
   right: -0.7rem;
 }
-.rotate-12 {
-  transform: rotate(12deg);
-}
-.-rotate-12 {
-  transform: rotate(-12deg);
-}
-.rotate-45 {
-  transform: rotate(45deg);
-}
 .artic-category-card {
   padding: 0.25rem 0.75rem;
   width: fit-content;
@@ -637,10 +642,10 @@ aside:target + .overlay {
   box-shadow: 6px 6px #000;
 }
 .tech-hover:hover {
-  background-color:#ffdf20 ;
+  background-color: #ffdf20;
 }
 .design-hover:hover {
-  background-color:#7bf1a8 ;
+  background-color: #7bf1a8;
 }
 .culture-hover:hover {
   background-color: #fda5d6;
@@ -671,8 +676,92 @@ aside:target + .overlay {
 }
 .sticky-side {
   position: sticky;
-  top:6rem;
+  top: 6rem;
 }
+/* ---------------------------------Third section-------------------------------------- */
+.auth-black-square {
+  width: 10rem;
+  height: 10rem;
+  transform: rotate(45deg);
+  top: 2.5rem;
+  right: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.auth-red-square {
+  width: 8rem;
+  height: 8rem;
+  transform: rotate(-12deg);
+  left: 2.5rem;
+  bottom: 2.5rem;
+  background-color: rgba(251, 44, 54, 0.1);
+  z-index: -5;
+}
+.under-line {
+  width: 8rem;
+  height: 0.5rem;
+  margin-top: 1rem;
+}
+.rotate-1 {
+  transform: rotate(1deg);
+}
+.author-card-1:hover,
+.author-card-2:hover,
+.author-card-3:hover {
+  transform: translate(-2px, -2px);
+}
+.author-card-1:hover.author-card-1 h4 {
+  color: #e7000b;
+}
+.author-card-2:hover.author-card-2 h4 {
+  color: #155dfc;
+}
+.author-card-3:hover.author-card-3 h4 {
+  color: #9333ea;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+
+#authors img {
+  width: 8rem;
+  height: 8rem;
+}
+.author-title {
+  right: -0.5rem;
+  top: -0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+.social-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.social-icon:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px #000;
+}
+.twitter-icon:hover {
+  background-color: #1da1f2;
+}
+.linkedin-icon:hover {
+  background-color: #155dfc;
+}
+.instagram-icon:hover {
+  background-color: #db2777;
+}
+/* ---------------------------------Fourth section-------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -705,6 +794,12 @@ aside:target + .overlay {
   }
   .lg-flex {
     display: flex;
+  }
+  .lg-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .lg-w-48 {
+    width: 48%;
   }
   /* .lg-justify-between {
     justify-content: space-between;
@@ -743,6 +838,15 @@ aside:target + .overlay {
   }
   .xl-flex {
     display: flex;
+  }
+  .xl-flex-row {
+    flex-direction: row;
+  }
+  .xl-flex-1 {
+    flex: 1;
+  }
+  .xl-w-33 {
+    width: 33%;
   }
   .xl-gap-20 {
     gap: 5rem;
