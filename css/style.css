@@ -87,6 +87,9 @@ button {
 .bg-white {
   background-color: #fff;
 }
+.bg-red-50 {
+  background-color: #fef2f2;
+}
 .bg-red-500 {
   background-color: #fb2c36;
 }
@@ -98,6 +101,9 @@ button {
 }
 .bg-yellow-300 {
   background-color: #ffdf20;
+}
+.bg-blue-50 {
+  background-color: #eff6ff;
 }
 .bg-blue-100 {
   background-color: #dbeaf3;
@@ -111,11 +117,17 @@ button {
 .bg-green-300 {
   background-color: #7bf1a8;
 }
+.bg-green-500 {
+  background-color: #00c951;
+}
+.bg-purple-50 {
+  background-color: #faf5ff;
+}
 .bg-purple-100 {
   background-color: #f3e8ff;
 }
 .bg-purple-500 {
-  background-color: #ad64ff;
+  background-color: #ad46ff;
 }
 .bg-pink-100 {
   background-color: #fce7f3;
@@ -232,11 +244,17 @@ button {
 .p-8 {
   padding: 2rem;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .pb-16 {
   padding-bottom: 4rem;
 }
 .pt-36 {
   padding-top: 9rem;
+}
+.pl-6 {
+  padding-left: 1.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -392,6 +410,9 @@ button {
 .flex-1 {
   flex: 1;
 }
+.shrink-0 {
+  flex-shrink: 0;
+}
 /* =========================== Common Classes ======================== */
 .container {
   max-width: 1280px;
@@ -400,13 +421,13 @@ button {
   cursor: pointer;
 }
 .duration-300 {
-  transition: 0.3s all;
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
 }
 .duration-200 {
-  transition: 0.2s all;
+  transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
 }
 .duration-150 {
-  transition: 0.15s all;
+  transition: 0.15s all cubic-bezier(0.4, 0, 0.2, 1);
 }
 .display-none {
   display: none;
@@ -579,12 +600,10 @@ aside:target + .overlay {
   transform: rotate(-2deg);
   width: fit-content;
 }
-#hero button {
-  box-shadow: 5px 5px #000;
-}
 #hero button:hover {
-  transform: translate(5px, 5px);
-  box-shadow: none;
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px #000;
+  /* "This can be done with ::after or ::before, but box-shadow hover is shorter and does the same thing. No difference at all." */
 }
 .hero-img {
   height: 24rem;
@@ -606,7 +625,6 @@ aside:target + .overlay {
 .artic-img {
   width: 10rem;
   height: 8rem;
-  flex-shrink: 0;
 }
 .artic-status-card {
   padding: 0.25rem 0.5rem;
@@ -657,13 +675,11 @@ aside:target + .overlay {
   background-color: #d8b4fe;
 }
 #latestArticles button {
-  box-shadow: 5px 5px #000;
   padding: 1rem 3rem;
-  width: fit-content;
 }
 #latestArticles button:hover {
-  transform: translate(5px, 5px);
-  box-shadow: none;
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px #000;
 }
 .text-red-hover:hover {
   color: #e7000b;
@@ -708,6 +724,8 @@ aside:target + .overlay {
 .author-card-2:hover,
 .author-card-3:hover {
   transform: translate(-2px, -2px);
+  box-shadow: 8px 8px #000;
+  /* "This follows the same idea as line 597 in the CSS." */
 }
 .author-card-1:hover.author-card-1 h4 {
   color: #e7000b;
@@ -718,10 +736,6 @@ aside:target + .overlay {
 .author-card-3:hover.author-card-3 h4 {
   color: #9333ea;
 }
-.align-self-end {
-  align-self: flex-end;
-}
-
 #authors img {
   width: 8rem;
   height: 8rem;
@@ -731,9 +745,11 @@ aside:target + .overlay {
   top: -0.5rem;
   padding: 0.25rem 0.5rem;
 }
-.social-icon {
+.social-icon,
+.box-dims {
   width: 3rem;
   height: 3rem;
+  /* box-dims class in fourth section */
 }
 .social-icon:hover {
   transform: translate(-2px, -2px);
@@ -749,24 +765,14 @@ aside:target + .overlay {
   background-color: #db2777;
 }
 /* ---------------------------------Fourth section-------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#community button {
+  padding: 1.5rem 3rem;
+  width: fit-content;
+}
+#community button:hover {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px #000;
+}
 
 @media screen and (max-width: 480px) {
   :root {
@@ -801,6 +807,9 @@ aside:target + .overlay {
   .lg-w-48 {
     width: 48%;
   }
+  .lg-pt-10 {
+  padding-top: 2.5rem;
+}
   /* .lg-justify-between {
     justify-content: space-between;
   } */
